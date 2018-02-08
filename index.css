@@ -112,7 +112,6 @@ button span{
     height: 18px;
     width: 100%;
     position: absolute;
-    z-index: 1;
 }
 
 .boxleft {
