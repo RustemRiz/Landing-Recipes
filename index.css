@@ -14,6 +14,10 @@ h1, h2, h6 {
     color: white;
 }
 
+#logo-img{
+    margin-bottom: 10px;
+}
+
 p {
     font-size: 9px;
 }
@@ -27,7 +31,8 @@ span.red{
 }
 
 button {
-    margin: 20px 0 10px;
+    min-height: 90px;
+    margin: 20px 0;
     background-color: #B7D222;
     box-shadow: 0 0 40px 20px rgba(30, 50, 0, .7) inset;
     color: white;
@@ -36,6 +41,7 @@ button {
 button span{
     font-size: 25px;
 }
+
 
 .header {
     border-style: solid;
@@ -123,6 +129,7 @@ button span{
     z-index: 1;
 }
 
+
 .boxright {
     background: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAgMDAwMDBAcFBAQEBAkGBwUHCgkLCwoJCgoMDREODAwQDAoKDhQPEBESExMTCw4UFhQSFhESExL/2wBDAQMDAwQEBAgFBQgSDAoMEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhL/wgARCAASABIDAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAACAn/xAAYAQEBAQEBAAAAAAAAAAAAAAACAQQAA//aAAwDAQACEAMQAAAASXM1Sk8+9/HkE0c4Dqv88RjilMdP/8QAKxAAAgECAgkDBQAAAAAAAAAAAQIDBBIAEQUGBwgJExQhUSMxMkFCQ5Gx/9oACAEBAAE/ANF8MzZRQV6z1lfrppVEdX6arr4LHUNm6M0cCuFf4m0qbcb4e5xS7IqmfWbUQzDVt5FjWid2qZKHNB6hci60t2CG635YMkcRKJzI1TsE5pNo8fLBUlWGWY8H29xjijQ2bNtU6myfnHTjQLMl9gRoXZ0f8bE2IRcCwETlfvxFQMY1tMYGQyFrn+Ll+sSdiMcQ+vqqDdur+gqZ6bqdJ0sE/JcpzYnzvRvKn6jCRIEGSL7eMf/EABYRAQEBAAAAAAAAAAAAAAAAAAEQAP/aAAgBAgEBPwDNaz//xAAXEQADAQAAAAAAAAAAAAAAAAAAAhAS/9oACAEDAQE/ANCsZiVJ/9k=') 100% 0 no-repeat;
     min-width: 18px;
@@ -168,7 +175,6 @@ button span{
     height: 100%;
     position: absolute;
     right: 0;
-
 }
 
 
