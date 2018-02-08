@@ -1,7 +1,16 @@
 body {
     background-image: url(images/background.jpg);
+}
+
+html,body{
     height: 100%;
 }
+
+.d-flex{
+    min-height: 100%;
+
+}
+
 
 h1, h2, h6 {
     color: white;
@@ -20,13 +29,11 @@ button {
     background-color: #B7D222;
     box-shadow: 0 0 40px 20px rgba(30, 50, 0, .7) inset;
     color: white;
-    width: 90%;
 }
 
 .header {
-    padding: 0;
     border-style: solid;
-    background-color: #B77A27;
+    background-color: #b97d27; 
     border-width: 0 0 15px;
     border-image: url(images/top.jpg) 0 0 50% round;
     margin-bottom: 20px;
@@ -36,30 +43,43 @@ button {
 #bigfood-img {
     margin-top: -50px;
     margin-left: -50px;
-
+}
+.d-none{
+    z-index: 1;
 }
 
 .cheese {
     height: 30px;
+    position: absolute;
+    width: 100%;
+
 }
 
 .cheese div {
-    margin-bottom: -40px;
-    z-index: 1;
+    bottom: 0px;
+    z-index: 2;
 
 }
 
+
 .content {
+    width: 100%;
     background-color: white;
+}
+
+.box {
+    position: relative;
 }
 
 .props {
     background-color: rgba(0, 0, 0, .5);
     margin: 5px;
+    padding: 7px;
+
 }
 
 .props p {
-    font-size: 10px;
+    font-size: 12px;
     color: rgba(200, 200, 200, .3);
 }
 
@@ -78,6 +98,8 @@ button {
     min-width: 18px;
     min-height: 18px;
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .boxright {
@@ -85,6 +107,8 @@ button {
     min-width: 18px;
     min-height: 18px;
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .boxbtmline {
@@ -98,6 +122,7 @@ button {
     min-width: 18px;
     min-height: 18px;
     width: 100%;
+    position: absolute;
 }
 
 .boxbtmright {
@@ -105,14 +130,23 @@ button {
     min-width: 18px;
     min-height: 18px;
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .boxcenerleft {
     background: url('data:image/jpg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAgMDAwMDBAcFBAQEBAkGBwUHCgkLCwoJCgoMDREODAwQDAoKDhQPEBESExMTCw4UFhQSFhESExL/2wBDAQMDAwQEBAgFBQgSDAoMEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhL/wgARCABuABIDAREAAhEBAxEB/8QAGQABAQEBAQEAAAAAAAAAAAAACQUECgMH/8QAGAEAAwEBAAAAAAAAAAAAAAAAAQIDBAD/2gAMAwEAAhADEAAAAPiqaWw7P6WkTMdStPDUSI87tcIb7cDcruq8KJAhTs1bS3HgiTQ4/Rr2UBo6HfaFqg5/8+h5XhdYAVO7uvCyeEJKtW0tx4Ik0OP0a9lAaOh32haoOf8Az6HleF1hz+JoeV4XGH//xAAwEAACAgAFAgUBCAMBAAAAAAABAgMEAAUREiEGEwciMUFRCCNCUmGSscHxFBUWof/aAAgBAQABPwD6e+osnyDxLoV+pOlsr6vTN2WnWgtUXvGrO7ARSpXEqJKe5s3IWG5NV1X3ib7IFyvK6lhwp/MEE6A+2BPx5Tx7fZscfRV1X4b0+uqHTviR0mMxznOc3qrkWfxTytLQtieF4UESMAg7ke4TJ5xyrAxFtsURnszM7Nqjgbd+qgFQdCoOh9fU4CccGTT8lOPpusT0vH3w8fLZexP/ANLQi3cMCklhEcEe4KsQQMU4Y2tWdOHjlAJXj1Ua6k+uuA4A+9/7joO7eyfrXp69krSQ5jSzatNUlghWV45lkVkZFIILAqNARoTpioT/AJNtG2lXmGwewOwfPv8AOE4UanH03vTqeOfQ1i/BNPVpZ5BbMKXoKjSPA4kUCWciMeZVJViu8eQMpIYUXJMjHbqZzrpqeVGh/b+8AkgHcv6Tjw6zyDpfxC6dzm/Va/XyrM61h6zWXqdxVlU7RMhDITztYHQN646YeafIMtluQzVp5a6u8EzlnhZhqVdtTuZddC/3jz74DEAAYy0rLmVZZ0sdruoXSFdzlA3IXg+Y86bhp/HSpvNkld84URWpXlcw9pEaBGkYxxOEZkLohVGZSVZgWXg424SzPBIklZ+28DiSJo2KsjroVbjnUEj00PxzpjoqzDmPSWT3KSSJBcpxzosgfcA43c9xVfXnneqv+IBtRjafnGRUP9hnFCpLFJKtm3FEyQrvd9W00Ue7aE6D5YYyKkmU1Rl1Zpnr09sNczzvPJtCjl5ZCzyOTyzuWZm1JJOBt0G48++PpvenU8c+hrF+CaerSzyC2YUvQVGkeBxIoEs5EY8yqSrFd48gZSQwouSZGO3UznXTU8qND+394BJAO5f0nHh1nkHS/iF07nN+q1+vlWZ1rD1msvU7irKp2iZCGQnnawOgb1x0w80+QZbLchmrTy11d4JnLPCzDUq7ancy66F/vHn3wGIAAxlpWXMqyzpY7XdQukK7nKBuQvB8x503DT+OlTebJK75woitSvK5h7SI0CNIxjicIzIXRCqMykqzAsvBxtwlmeCRJKz9t4HEkTRsVZHXQq3HOoJHpofjnTHRVmHMeksnuUkkSC5TjnRZA+4Bxu57iq+vPO9Vf8QDajG0/OK1iGvahlvwCaAOskkIJAlVDoVPPGoJ5HpqcdKVLlTI4VzWYyW+9NJPpL3Fjd5ncxq+xC6ISUViqsyqC3JONfzOP//EABwRAAICAwEBAAAAAAAAAAAAAAIQABIBESIxMv/aAAgBAgEBPwCD9SqGs2hHqVQzawx9lUIq0EuVqYeGPsqhFWglyxX/xAAaEQADAQEBAQAAAAAAAAAAAAAAARACESIy/9oACAEDAQE/ANmvk6PR30cQ6xnDVY4x6jruqxxj1HXf/9k=') 0 0 repeat-y;
-    width: 100%;
+    width: 18px;
+    height: 100%;
+    position: absolute;
 }
 
 .boxcenterright {
     background: url('data:image/jpg;base64,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') 100% 0 repeat-y;
-    width: 100%;
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+
 }
+
