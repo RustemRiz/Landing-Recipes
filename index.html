@@ -16,54 +16,60 @@
 <body>
     <div class="d-flex flex-column justify-content-between">
         <div class="header text-center">
-            <h6>ГОТОВИМ ВКУСНЯШКИ ДОМА</h6>
+            <p>ГОТОВИМ ВКУСНЯШКИ ДОМА</p>
 
         </div>
 
-        <div class="container ">
+        <div class="container">
             <div class="row justify-content-center">
-
                 <!-- new line -->
                 <div class="w-100"></div>
-
-                <div class="col-11  col-md-10 col-lg-8 col-xl-6 ">
-                    <div class="row justify-content-end">
-                        <div class="col-11 col-md-7 ">
-                            <img class="img-fluid" src="images/logo.png">
+                <div class="col-12  col-md-8 col-lg-6 col-xl-5 ">
+                    <div class="row justify-content-center">
+                        <!-- logo -->
+                        <div class="col-12 col-md-7 offset-md-5 ">
+                            <img class="img-fluid rounded mx-auto d-block" src="images/logo.png">
                         </div>
                     </div>
                     <div class="row box">
                         <div class="boxtopline">
-                            </div>
-                            <div class="boxleft">
-                            <div class="boxright"></div>
+                        </div>
+
+                        <div class="boxright"></div>
+                        <div class="boxleft">
                         </div>
                         <div class="boxcenerleft"></div>
                         <div class="boxcenterright"> </div>
                         <div class="content justify-content-center">
-                            <div class="row ">
+                            <div class="row">
                                 <!-- sandwich big image -->
-                                <div class="d-none d-sm-block col-4  col-lg-6 align-self-end align-self-lg-start ">
+                                <div class="d-none d-md-block col-md-7 " style="border: 1px solid purple;">
                                     <img id="bigfood-img" class="img-fluid " src="./images/bigfood.png">
                                 </div>
-                                <div class="col-11 col-sm-7 col-lg-5">
-                                    <h3 class="text-center">Вкусные и полезные</h3>
-                                    <h5 class="text-center"><span>рецепты</span> на любой стол!</h5>
+                                <!-- sandwich for sm -->
+                                <div class="d-none d-sm-block d-md-none col-sm-4  ">
+                                    <img id="bigfood-img1" class="img-fluid " src="./images/bigfood.png">
+                                </div>
+                                <div class="col-sm-7 offset-sm-4 offset-md-5 main-text-div" >
+                                    <h5 class="text-center">
+                                        Вкусные и полезные<br>
+                                        <small><span class="red">рецепты</span> на любой стол!</small>
+                                    </h5>
                                 </div>
                                 <div class="col-10 offset-1">
                                     <button class="btn btn-block">
-                                        <img src="./images/btnbox.png">
+                                        <img class="img-fluid" src="./images/btnbox.png">
                                         <br class="d-sm-none d-xs-block">
-                                        ЧИТАТЬ РЕЦЕПТ
+                                        <strong>ЧИТАТЬ РЕЦЕПТ</strong>
                                     </button>
                                 </div>
                                 <div class="col-12">
                                     <!-- cheese and pizza images -->
-                                    <div class="row cheese justify-content-between ">
-                                        <div class="col-2 d-none d-sm-block">
+                                    <div class="row small-img">
+                                        <div id="pizza-img" class="col-2 col-md-3 offset-1 d-none d-sm-block">
                                             <img class="img-fluid" src="./images/pizza.png">
                                         </div>
-                                        <div class="col-2 d-none d-sm-block">
+                                        <div id="cheese-img" class="col-2 offset-6 col-md-3 offset-md-5 d-none d-sm-block">
                                             <img class="img-fluid" src="./images/cheese.png">
                                         </div>
                                     </div>
@@ -77,31 +83,29 @@
                    </div>
 
                    <div class="row justify-content-between align-items-end">
-                    <div class="col d-none d-sm-block props">
-
-                        <img class="rounded mx-auto d-block" src="./images/delicious.png">
+                    <div class="col props d-none d-sm-block ">
+                        <img class="rounded mx-auto d-block" src="./images/healthy.png">
                         <p class="text-center">полезные продукты</p>
                     </div>
                     <div class="col props d-none d-sm-block ">
-                        <img class="rounded mx-auto d-block" src="./images/guests.png">
+                        <img class="rounded mx-auto d-block" src="./images/recipes.png">
                         <p class="text-center">все лучшие рецепты</p>
                     </div>
                     <div class="col props d-none d-sm-block">
-                        <img class="rounded mx-auto d-block" src="./images/healthy.png">
+                        <img class="rounded mx-auto d-block" src="./images/guests.png">
                         <p class="text-center">восторженные гости</p>
                     </div>
                     <div class="col props d-none d-sm-block">
-                        <img class="rounded mx-auto d-block" src="./images/recipes.png">
+                        <img class="rounded mx-auto d-block" src="./images/delicious.png">
                         <p class="text-center">пальчики оближешь</p>
                     </div>
 
                 </div>
             </div>
             <div class="w-100"></div>
-            <img id="img-sushi" class="d-none d-sm-block" src="./images/sushi.png">
+            <img id="sushi-img" class="d-none d-sm-block" src="./images/sushi.png">
         </div>
     </div >
-
     <footer class="footer">
         <p class="text-center ">
             Все права на аудио и видео материалы, представленные на нашем сайте принадлежат их законным владельцам и
@@ -111,6 +115,15 @@
             Авторы не несут ответственности за возможные последствия использования их в целях, запрещенных Уголовным
             Кодексом Российской Федерации. <br>Посетитель обязуется не применять полученные здесь ссылки и информацию в
             целях, запрещённых УК РФ.
+            Если вы соглашаетесь с указанными условиями, то можете приступить к просмотру материалов. Иначе вы должны
+            немедленно покинуть сайт.
+            Все права на аудио и видео материалы, представленные на нашем сайте принадлежат их законным владельцам и
+            предназначены только для ознакомления.
+            Наличие материалов на сайте никаким образом не претендует на обозначение нашего авторского права на данные
+            материалы.<br>
+            Авторы не несут ответственности за возможные последствия использования их в целях, запрещенных Уголовным
+            Кодексом Российской Федерации. <br>Посетитель обязуется не применять полученные здесь ссылки и информацию в
+            целях, запрещённых УК РФ.<br>
             Если вы соглашаетесь с указанными условиями, то можете приступить к просмотру материалов. Иначе вы должны
             немедленно покинуть сайт.
         </p>

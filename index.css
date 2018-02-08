@@ -2,65 +2,87 @@ body {
     background-image: url(images/background.jpg);
 }
 
-html,body{
+html, body {
     height: 100%;
 }
 
-.d-flex{
+.d-flex {
     min-height: 100%;
-
 }
-
 
 h1, h2, h6 {
     color: white;
 }
 
 p {
-    font-size: 20px;
+    font-size: 9px;
 }
 
-span {
+span.red{
     color: #c30;
+}
+.main-text-div{
+    padding: 10px;
+    margin-top: 0;
 }
 
 button {
-    margin: 10px;
+    margin: 20px 0 10px;
     background-color: #B7D222;
     box-shadow: 0 0 40px 20px rgba(30, 50, 0, .7) inset;
     color: white;
+    font-size:10px;
+}
+button span{
+    font-size: 25px;
 }
 
 .header {
     border-style: solid;
-    background-color: #b97d27; 
+    background-color: #b97d27;
     border-width: 0 0 15px;
     border-image: url(images/top.jpg) 0 0 50% round;
     margin-bottom: 20px;
+    height: 20px;
+    padding: 8px;
+}
 
+.header p{
+    font-size: 9px;
+    color: white;
 }
 
 #bigfood-img {
-    margin-top: -50px;
-    margin-left: -50px;
+    left: -50px;
+    top:-85px;
+    position: absolute;
 }
-.d-none{
+
+#bigfood-img1{
+    left: -10px;
+    top: -20px;
+    position: absolute;
+}
+
+.d-none {
     z-index: 1;
 }
 
-.cheese {
-    height: 30px;
+.small-img {
     position: absolute;
     width: 100%;
 
 }
 
-.cheese div {
-    bottom: 0px;
+.small-img div {
+    bottom: 10px;
     z-index: 2;
-
 }
 
+#cheese-img{
+    bottom: 20px;
+    right: -20px;
+}
 
 .content {
     width: 100%;
@@ -69,12 +91,13 @@ button {
 
 .box {
     position: relative;
+    min-width: 20px;
 }
 
 .props {
     background-color: rgba(0, 0, 0, .5);
     margin: 5px;
-    padding: 7px;
+    padding: 5px 0 0 0;
 
 }
 
@@ -83,14 +106,13 @@ button {
     color: rgba(200, 200, 200, .3);
 }
 
-#img-sushi {
-    margin: 20px;
-}
 
 .boxtopline {
     background: url('data:image/jpg;base64,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') 0 0 repeat-x;
     height: 18px;
     width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .boxleft {
@@ -149,4 +171,5 @@ button {
     right: 0;
 
 }
+
 
