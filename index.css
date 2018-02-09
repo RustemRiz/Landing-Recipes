@@ -13,9 +13,6 @@ html, body {
 h1, h2, h6 {
     color: white;
 }
-h4,span{
-    line-height: 0.8;
-}
 
 #logo-img{
     margin-bottom: 10px;
@@ -32,7 +29,7 @@ h4,span{
 }
 
 .header p{
-    font-size: 9px;
+    font-size: 12px;
     color: white;
 }
 
@@ -43,11 +40,6 @@ p {
 
 span.red{
     color: #c30;
-}
-
-.main-text-div{
-    padding: 10px;
-    margin-top: 5px;
 }
 
 #btn-border{
@@ -61,28 +53,17 @@ button {
     min-height: 90px;
     background-color: #909300;
     box-shadow: 0 0 30px 45px rgba(30, 50, 0, .1) inset,
-                 1px 1px 0 rgba(0, 0, 0, .7) ;
+    1px 1px 0 rgba(0, 0, 0, .7) ;
     color: white;
     font-size:10px;
     border: none;
     border-radius: 5px;
+    align-self: center;
 }
 
-button span{
-    font-size: 22px;
-}
-
-
-#bigfood-img {
-    left: -65px;
-    top:-85px;
-    position: absolute;
-}
-
-#bigfood-img1{
-    left: -10px;
-    top: -20px;
-    position: absolute;
+button img{
+    width: 50px;
+    height: auto;
 }
 
 .d-none {
@@ -104,10 +85,6 @@ button span{
     right: -20px;
 }
 
-.content {
-    width: 100%;
-    background-color: white;
-}
 
 .box {
     position: relative;
@@ -116,7 +93,7 @@ button span{
 
 .props {
     background-color: rgba(0, 0, 0, .3);
-    margin: 10px 3px !important;
+    margin: 15px 3px !important;
     padding: 8px 0 0 0 !important;
     border-radius: 8px;
 }
@@ -188,10 +165,84 @@ button span{
 
 .boxcenterright {
     background: url('data:image/jpg;base64,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') 100% 0 repeat-y;
-    width: 10%;
+    width: 18px;
     height: 100%;
     position: absolute;
     right: 0;
 }
 
 
+.content {
+    width: 100%;
+    background-color: white;
+}
+.main-text-div{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.main-text-div p{
+    /*font-weight: 500;*/
+    color: black;
+    line-height: 0.8;
+    font-size: 35px;
+}
+
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+
+    #bigfood-img{
+        left: 15px;
+        top: -20px;
+        position: absolute;
+    }
+
+    .main-text-div p{
+        font-size: 25px;
+    }
+    #btn-border{
+    margin:10px 0 10px;
+    }
+    .box {
+        width: 435px;
+        /*height: 225px;*/
+    }
+    button span{
+        font-size: 32px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+     
+    #bigfood-img {
+        left: -65px;
+        top:-85px;
+        position: absolute;
+    }
+    .main-text-div{
+        margin-top: 5px;
+    }
+    .box{
+        width: 593px;
+        /*height: 290px;*/
+    }
+
+    #btn-border{
+        margin:30px 0 10px;
+    }
+        
+    button span{
+        font-size: 30px;
+    }    
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    #btn-border{
+        margin:60px 0 35px;
+    }
+
+}
