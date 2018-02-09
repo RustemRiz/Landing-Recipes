@@ -20,10 +20,10 @@ h1, h2, h6 {
     border-style: solid;
     background-color: #b97d27;
     border-width: 0 0 15px;
-    border-image: url(images/top.jpg) 0 0 50% round;
+    border-image: url(images/top.jpg) 0 0 40% round;
     margin-bottom: 20px;
-    height: 20px;
-    padding: 8px;
+    height: 25px;
+    padding: 8px 0 10px;
 }
 
 .header p{
@@ -68,14 +68,9 @@ button {
     z-index: 2;
 }
 
-#cheese-img{
-    bottom: 20px;
-    right: -20px;
-}
-
 .props {
     background-color: rgba(0, 0, 0, .3);
-    margin: 15px 3px !important;
+    margin: 20px 3px !important;
     padding: 8px 0 0 0 !important;
     border-radius: 8px;
 }
@@ -196,19 +191,29 @@ button img{
     height: auto;
 }
 
+.props {
+    background-color: rgba(0, 0, 0, .3);
+    margin: 10px 3px !important;
+    padding: 8px 0 0 0 !important;
+    border-radius: 8px;
+}
+
 
 /*Extra small devices(575 and less)*/
 @media (max-width: 575px){
     #logo-div{
     margin-left: -25px;
     }
-  .main-text-div{
-    margin-left: 15px;
+    .main-text-div{
+        margin-left: 15px;
     }
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
-    #bigfood-img{
+    #logo-div{
+    margin-left: -15px;
+    }
+  #bigfood-img{
         left: 15px;
         top: -20px;
         position: absolute;
@@ -219,7 +224,7 @@ button img{
     }
 
     #btn-border{
-    margin:5px 0 10px;
+    margin:9px 0 5px;
     }
     .box {
         width: 440px;
@@ -231,11 +236,24 @@ button img{
         width: 50px;
         height: auto;
     }
+    #cheese-img{
+    bottom: 10px;
+    right: 20px;
+}
+
+    #pizza-img{
+        left:-19px;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    #bigfood-img {
+  #logo-div{
+    margin-left: 0;
+    left: 80px;
+    }
+  #bigfood-img {
         left: -55px;
         top:-100px;
         position: absolute;
@@ -248,7 +266,15 @@ button img{
     }
 
     #btn-border{
-        margin:25px 0 5px;
+        margin:10px 0 5px;
+    }
+    #cheese-img{
+        bottom: 20px;
+        right: -41px;
+    }
+
+    #pizza-img{
+        left:-31px;
     }
         
     button span{
@@ -258,17 +284,30 @@ button img{
         font-size: 12px;
     }
 
+    .props {
+    margin: 20px 3px !important;
+    padding: 8px 0 0 0 !important;
+}
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
     #btn-border{
-        margin:60px 0 35px;
+        margin:40px 0 40px;
     }
-        #bigfood-img {
+    button span{
+        font-size: 31px;
+    }  
+    #bigfood-img {
         left: -65px;
         top:-85px;
         position: absolute;
     }
+    #bigfood-img {
+        left: -45px;
+        top:-110px;
+        position: absolute;
+    }
+
 
 }
