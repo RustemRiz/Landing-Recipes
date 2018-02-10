@@ -216,6 +216,7 @@ button img{
     #btn-border{
     margin:-2px 0 6px;
     }
+  
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
@@ -268,7 +269,8 @@ button img{
         line-height: 1;
     }
     #sushi-div{
-        left: 0;
+        left:-10px;
+        top:-5px;
     }
 }
 
@@ -280,14 +282,15 @@ button img{
         position: absolute;
     }
     .main-text-div{
-        margin-top: 5px;
+        margin-top: 12px;
+        left:-10px;
     }
     .box{
         width: 593px;
     }
 
     #btn-border{
-        margin:15px 0 5px;
+        margin:6px 0 5px;
     }
     #cheese-img{
         bottom: 20px;
@@ -307,6 +310,14 @@ button img{
     margin: 20px 3px !important;
     padding: 8px 0 0 0 !important;
     }
+     #sushi-div{
+        left:-10px;
+        top:-5px;
+    }
+    #logo-div{
+           bottom:-5px         
+/*         margin-bottom: 15px; */
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -322,4 +333,15 @@ button img{
         top:-110px;
         position: absolute;
     }
+    .main-text-div{
+        margin-top: 5px;
+    }
+    #sushi-div{
+    left:-10px;
+    top:-5px;
+    }
+    #logo-div{
+        margin-bottom: 10px;
+    }
+
 }
