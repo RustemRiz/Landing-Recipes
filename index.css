@@ -15,19 +15,19 @@ h1, h2, h6 {
 }
 
 
-
 .header {
     border-style: solid;
     background-color: #b97d27;
     border-width: 0 0 15px;
     border-image: url(images/top.jpg) 0 0 40% round;
     margin-bottom: 20px;
-    height: 25px;
+    height: 37px;
     padding: 8px 0 10px;
 }
 
 .header p{
     font-size: 12px;
+    font-weight: 500;
     color: white;
 }
 
@@ -39,7 +39,6 @@ p {
 span.red{
     color: #c30;
 }
-
 
 
 button { 
@@ -148,7 +147,6 @@ button {
     right: 0;
 }
 
-
 #logo-div{
     margin-bottom: 10px;
 }
@@ -162,12 +160,9 @@ button {
 }
 
 .main-text-div p{
-    /*font-weight: 500;*/
     color: black;
     line-height: 0.9;
-    font-size: 27px;
 }
-
 
 .box {
     position: relative;
@@ -183,7 +178,7 @@ button span{
     border: 1px dashed #909300;
     padding: 4px;
     border-radius: 5px;
-    margin: 0px 0 0px;
+    margin: 0;
 }
 
 button img{
@@ -202,29 +197,39 @@ button img{
 /*Extra small devices(575 and less)*/
 @media (max-width: 575px){
     #logo-div{
-    margin-left: -25px;
+        margin-left: -25px;
+        margin-bottom: 3px;
     }
     .main-text-div{
-        margin-left: 15px;
+        margin-left: 20px;
+    }
+    .main-text-div p{
+        font-size: 26px;
+    }
+    .main-text-div small{
+        font-size:20px;
+        margin-left:-18px;
+    }
+    .box{
+        margin-bottom:3px;
+    }
+    #btn-border{
+    margin:-2px 0 6px;
     }
 }
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) { 
-    #logo-div{
-    margin-left: -15px;
-    }
-  #bigfood-img{
-        left: 15px;
-        top: -20px;
+    #bigfood-img{
+        left: 12px;
+        top: -19px;
         position: absolute;
     }
-
     .main-text-div p{
         font-size: 26px;
     }
 
     #btn-border{
-    margin:9px 0 5px;
+    margin:7px 0 3px;
     }
     .box {
         width: 440px;
@@ -236,24 +241,40 @@ button img{
         width: 50px;
         height: auto;
     }
-    #cheese-img{
-    bottom: 10px;
-    right: 20px;
-}
-
+   #cheese-img{
+    bottom: 30px;
+    right: 22px;
+    }
     #pizza-img{
-        left:-19px;
+        left:-16px;
+        bottom:0;
     }
 
+}
+
+@media(min-width: 576px) and (max-width: 767px){
+    #logo-div{
+        margin-left:-29px;
+    }
+    #cheese-img{
+        padding: 23px;
+    }
+    .props{
+        padding: 0;
+        margin: 12px 3px !important;
+        height: 90px;
+    }
+    .props p{
+        line-height: 1;
+    }
+    #sushi-div{
+        left: 0;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-  #logo-div{
-    margin-left: 0;
-    left: 80px;
-    }
-  #bigfood-img {
+    #bigfood-img {
         left: -55px;
         top:-100px;
         position: absolute;
@@ -266,13 +287,12 @@ button img{
     }
 
     #btn-border{
-        margin:10px 0 5px;
+        margin:15px 0 5px;
     }
     #cheese-img{
         bottom: 20px;
         right: -41px;
     }
-
     #pizza-img{
         left:-31px;
     }
@@ -283,11 +303,10 @@ button img{
     .props p{
         font-size: 12px;
     }
-
     .props {
     margin: 20px 3px !important;
     padding: 8px 0 0 0 !important;
-}
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -299,15 +318,8 @@ button img{
         font-size: 31px;
     }  
     #bigfood-img {
-        left: -65px;
-        top:-85px;
-        position: absolute;
-    }
-    #bigfood-img {
         left: -45px;
         top:-110px;
         position: absolute;
     }
-
-
 }
